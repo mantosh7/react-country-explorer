@@ -1,5 +1,6 @@
-import {FaLongArrowAltRight} from "react-icons/fa" ;
-export const Hero = ()=>{
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+export const Hero = () => {
     return (
         <div className="hero-container">
             <div className="hero-left">
@@ -9,7 +10,9 @@ export const Hero = ()=>{
                 <p>
                     Discover the history, culture and beauty of every nation. Sort, serach and filter through countries to find the details you need
                 </p>
-                <button>Start Exploring <FaLongArrowAltRight className="right-arrow" /> </button>
+                <NavLink to="/country">
+                    <button>Start Exploring <FaLongArrowAltRight className="right-arrow" /> </button>
+                </NavLink>
             </div>
             <div className="hero-right">
                 <img src="/images/earth2.jpeg" alt="world beauty" />
